@@ -2,5 +2,233 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ContApp.Views.MainView">
-  <Label Text="{Binding MainText}" VerticalOptions="Center" HorizontalOptions="Center" />
+  <!--LAYOUT ROOT-->
+  <StackLayout  VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+
+    <!--TITLE-->
+    <Grid  HorizontalOptions="FillAndExpand" BackgroundColor="#0277BD">
+
+      <Grid.RowDefinitions>
+        <RowDefinition Height="65" />
+      </Grid.RowDefinitions>
+
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="65" />
+        <ColumnDefinition Width="*" />
+      </Grid.ColumnDefinitions>
+      <StackLayout Padding="20">
+        <Image Source="/Resources/drawable/phone.png"  Aspect="AspectFit" />
+      </StackLayout>
+
+      <Label Grid.Column="1" Text="ContApp" TextColor="White" FontSize="26" VerticalTextAlignment="Center" />
+    </Grid>
+
+    <!--LIST OF CONTACTS-->
+    <ScrollView>
+
+      <StackLayout Padding="0,0,0,10">
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image  Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="8" VerticalOptions="FillAndExpand">
+            <Label  Text="Bruce Wayne" FontSize="20" />
+            <Label  Text="12345678" FontSize="18" />
+          </StackLayout>
+        </Grid>
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image Grid.Row="0" Grid.Column="0" Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="15" VerticalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" Text="Bruce Wayne" FontSize="20" />
+          </StackLayout>
+        </Grid>
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image Grid.Row="0" Grid.Column="0" Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="15" VerticalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" Text="Bruce Wayne" FontSize="20" />
+          </StackLayout>
+        </Grid>
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image Grid.Row="0" Grid.Column="0" Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="15" VerticalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" Text="Bruce Wayne" FontSize="20" />
+          </StackLayout>
+        </Grid>
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image Grid.Row="0" Grid.Column="0" Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="15" VerticalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" Text="Bruce Wayne" FontSize="20" />
+          </StackLayout>
+        </Grid>
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image Grid.Row="0" Grid.Column="0" Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="15" VerticalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" Text="Bruce Wayne" FontSize="20" />
+          </StackLayout>
+        </Grid>
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image Grid.Row="0" Grid.Column="0" Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="15" VerticalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" Text="Bruce Wayne" FontSize="20" />
+          </StackLayout>
+        </Grid>
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image Grid.Row="0" Grid.Column="0" Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="15" VerticalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" Text="Bruce Wayne" FontSize="20" />
+          </StackLayout>
+        </Grid>
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image Grid.Row="0" Grid.Column="0" Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="15" VerticalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" Text="Bruce Wayne" FontSize="20" />
+          </StackLayout>
+        </Grid>
+
+        <!--CONTACT-->
+
+        <Grid Margin="0"  BackgroundColor="Silver" Padding="0,0,20,0">
+          <Grid.RowDefinitions>
+            <RowDefinition Height="75" />
+          </Grid.RowDefinitions>
+
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="40" />
+          </Grid.ColumnDefinitions>
+
+          <Image Grid.Row="0" Grid.Column="0" Source="/Resources/drawable/icon.png" Aspect="AspectFit" />
+          <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+          <StackLayout Grid.Row="0" Grid.Column="1" Padding="15" VerticalOptions="FillAndExpand">
+            <Label VerticalOptions="Center" Text="Bruce Wayne" FontSize="20" />
+          </StackLayout>
+        </Grid>
+      </StackLayout>
+    </ScrollView>
+  </StackLayout>
 </ContentPage>
