@@ -9,24 +9,23 @@
       <Grid.RowDefinitions>
         <RowDefinition Height="65" />
         <RowDefinition Height="300" />
-        <RowDefinition Height="*" />
+        <RowDefinition Height="Auto" />
       </Grid.RowDefinitions>
 
       <Grid.ColumnDefinitions>
         <ColumnDefinition Width="65" />
         <ColumnDefinition Width="*" />
       </Grid.ColumnDefinitions>
-      <StackLayout Padding="20">
-        <Image Source="/Resources/drawable/user.png"  Aspect="AspectFit" />
+      <StackLayout Padding="11">
+        <Image  Source="/Resources/drawable/user.png"  Aspect="AspectFit" />
       </StackLayout>
-
       <Label Grid.Column="1" Text="Bruce Wayne" TextColor="White" FontSize="26" VerticalTextAlignment="Center" />
+
+      <Image Grid.Row="1" Grid.ColumnSpan="2" Source="/Resources/drawable/a.jpg"  Aspect="AspectFill" />
     </Grid>
-    <StackLayout BackgroundColor="#03A9F4">
-    </StackLayout>
 
     <!--Details-->
-    <ScrollView  Grid.Row="1" Grid.ColumnSpan="2">
+    <ScrollView  Grid.Row="2" Grid.ColumnSpan="2">
       <StackLayout>
         <StackLayout Padding="15,0,0,25">
           <Label Text="Telephone Number" TextColor="Gray" FontSize="17" VerticalTextAlignment="Center" />
