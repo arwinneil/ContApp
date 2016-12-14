@@ -14,7 +14,7 @@ namespace ContApp
         {
             InitializeComponent();
 
-            MainPage = new ContactView();
+            MainPage = new MainView();
         }
 
         protected override void OnStart()

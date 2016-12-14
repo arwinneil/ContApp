@@ -5,7 +5,7 @@
   <StackLayout  VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
 
     <!--TITLE-->
-    <Grid  HorizontalOptions="FillAndExpand" BackgroundColor="#0277BD">
+    <Grid  HorizontalOptions="FillAndExpand" BackgroundColor="#2196F3">
       <Grid.RowDefinitions>
         <RowDefinition Height="65" />
         <RowDefinition Height="300" />
