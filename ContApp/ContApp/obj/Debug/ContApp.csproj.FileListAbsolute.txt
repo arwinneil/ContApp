@@ -1,0 +1,17 @@
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\ContApp.dll
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\ContApp.pdb
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\Xamarin.Forms.Core.dll
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\Xamarin.Forms.Platform.dll
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\Xamarin.Forms.Xaml.dll
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\Xamarin.Forms.Core.pdb
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\Xamarin.Forms.Core.xml
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\Xamarin.Forms.Platform.pdb
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\Xamarin.Forms.Xaml.pdb
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\Xamarin.Forms.Xaml.xml
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\obj\Debug\ContApp.csprojResolveAssemblyReference.cache
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\obj\Debug\ContApp.MainPage.xaml.g.cs
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\obj\Debug\ContApp.App.xaml.g.cs
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\obj\Debug\ContApp.dll
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\obj\Debug\ContApp.pdb
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\obj\Debug\ContApp.dll.mdb
+c:\users\admin\documents\visual studio 2015\Projects\ContApp\ContApp\ContApp\bin\Debug\ContApp.dll.mdb
