@@ -2,44 +2,49 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ContApp.Views.ContactView">
-  <StackLayout  VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
+    <StackLayout  VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
 
-    <!--TITLE-->
-    <Grid  HorizontalOptions="FillAndExpand" BackgroundColor="#2196F3">
-      <Grid.RowDefinitions>
-        <RowDefinition Height="65" />
-        <RowDefinition Height="300" />
-        <RowDefinition Height="Auto" />
-      </Grid.RowDefinitions>
+        <!--TITLE-->
+        <Grid  HorizontalOptions="FillAndExpand" BackgroundColor="#2196F3">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="45" />
+                <RowDefinition Height="300" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
 
-      <Grid.ColumnDefinitions>
-        <ColumnDefinition Width="65" />
-        <ColumnDefinition Width="*" />
-      </Grid.ColumnDefinitions>
-      <StackLayout Padding="11">
-        <Image  Source="/Resources/drawable/user.png"  Aspect="AspectFit" />
-      </StackLayout>
-      <Label Grid.Column="1" Text="Bruce Wayne" TextColor="White" FontSize="26" VerticalTextAlignment="Center" />
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="45" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <StackLayout Padding="11">
+                <Image  Source="/Resources/drawable/user.png"  Aspect="AspectFit" />
+            </StackLayout>
+            <Label Grid.Column="1" Text="Derp Doggo" TextColor="White" FontSize="26" VerticalTextAlignment="Center" />
 
-      <Image Grid.Row="1" Grid.ColumnSpan="2" Source="/Resources/drawable/a.jpg"  Aspect="AspectFill" />
-    </Grid>
+            <Image Grid.Row="1" Grid.ColumnSpan="2" Source="/Resources/drawable/a.jpg"  Aspect="AspectFill" />
+        </Grid>
 
-    <!--Details-->
-    <ScrollView  Grid.Row="2" Grid.ColumnSpan="2">
-      <StackLayout>
-        <StackLayout Padding="15,0,0,25">
-          <Label Text="Telephone Number" TextColor="Gray" FontSize="17" VerticalTextAlignment="Center" />
-          <Label  Text="+230 12345678" TextColor="Gray" FontSize="24" VerticalTextAlignment="Center" />
-        </StackLayout>
+        <!--Details-->
+        <ScrollView  Grid.Row="2" Grid.ColumnSpan="2">
+            <StackLayout>
 
-        <StackLayout Padding="15,0,0,25">
-          <Label  Text="Description" TextColor="Gray" FontSize="17" VerticalTextAlignment="Center" />
-          <Label  TextColor="Gray" FontSize="24" VerticalTextAlignment="Center">
+                <Entry Placeholder="Enter Number" Text="{Binding Input}" Keyboard="Numeric" />
 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </Label>
-        </StackLayout>
-      </StackLayout>
-    </ScrollView>
-  </StackLayout>
+                <Button Text="Mama Bouton" Command="{Binding Update}" />
+
+                <StackLayout Padding="15,0,0,25">
+                    <Label Text="Telephone Number" TextColor="Gray" FontSize="17" VerticalTextAlignment="Center" />
+                    <Label  Text="{Binding ContactNumber}" TextColor="Gray" FontSize="24" VerticalTextAlignment="Center" />
+                </StackLayout>
+
+                <StackLayout Padding="15,0,0,25">
+                    <Label  Text="Description" TextColor="Gray" FontSize="17" VerticalTextAlignment="Center" />
+                    <Label  TextColor="Gray" FontSize="24" VerticalTextAlignment="Center">
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </Label>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </StackLayout>
 </ContentPage>

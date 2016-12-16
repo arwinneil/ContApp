@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ContApp.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,14 @@ namespace ContApp.Views
 {
     public partial class ContactView : ContentPage
     {
+        private ContactViewModel _viewModel;
+
         public ContactView()
         {
             InitializeComponent();
+
+            _viewModel = new ContactViewModel();
+            BindingContext = _viewModel;
         }
     }
 }
