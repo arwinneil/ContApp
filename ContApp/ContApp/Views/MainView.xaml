@@ -9,7 +9,7 @@
 
         <StackLayout VerticalOptions="FillAndExpand">
 
-            <ListView ItemsSource="{Binding ContactList}" HasUnevenRows="True" VerticalOptions="FillAndExpand" ItemSelected="NavigateToContact">
+            <ListView  ItemsSource="{Binding ContactList}" HasUnevenRows="True" VerticalOptions="FillAndExpand" ItemSelected="NavigateToContact">
 
                 <ListView.ItemTemplate>
 
@@ -17,25 +17,27 @@
                         <ViewCell>
 
                             <!--CONTACT-->
+                            <StackLayout Padding="5">
 
-                            <Grid BackgroundColor="Transparent" Padding="0,0,20,0">
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="75" />
-                                </Grid.RowDefinitions>
+                                <Grid  Padding="0,0,20,0">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="75" />
+                                    </Grid.RowDefinitions>
 
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="75" />
-                                    <ColumnDefinition Width="*" />
-                                    <ColumnDefinition Width="40" />
-                                </Grid.ColumnDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="75" />
+                                        <ColumnDefinition Width="*" />
+                                        <ColumnDefinition Width="40" />
+                                    </Grid.ColumnDefinitions>
 
-                                <Image  Source="{Binding ContactImageURL}" Aspect="AspectFill" />
-                                <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
-                                <StackLayout Grid.Row="0" Grid.Column="1" Padding="15,0,0,0" VerticalOptions="FillAndExpand">
-                                    <Label  Text="{Binding ContactName}" FontSize="20" />
-                                    <Label  Text="{Binding ContactNumber}" FontSize="18" />
-                                </StackLayout>
-                            </Grid>
+                                    <Image Source="{Binding ContactImageURL}" Aspect="AspectFill" />
+                                    <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Padding="15,0,0,0" VerticalOptions="FillAndExpand">
+                                        <Label  Text="{Binding ContactName}" FontSize="20" />
+                                        <Label  Text="{Binding ContactNumber}" FontSize="18" />
+                                    </StackLayout>
+                                </Grid>
+                            </StackLayout>
                         </ViewCell>
                     </DataTemplate>
                 </ListView.ItemTemplate>
