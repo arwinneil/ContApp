@@ -7,21 +7,11 @@
         <!--TITLE-->
         <Grid  HorizontalOptions="FillAndExpand" BackgroundColor="#2196F3">
             <Grid.RowDefinitions>
-                <RowDefinition Height="45" />
+
                 <RowDefinition Height="300" />
-                <RowDefinition Height="Auto" />
             </Grid.RowDefinitions>
 
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="45" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <StackLayout Padding="11">
-                <Image  Source="/Resources/drawable/user.png"  Aspect="AspectFit" />
-            </StackLayout>
-            <Label Grid.Column="1" Text="Derp Doggo" TextColor="White" FontSize="26" VerticalTextAlignment="Center" />
-
-            <Image Grid.Row="1" Grid.ColumnSpan="2" Source="/Resources/drawable/a.jpg"  Aspect="AspectFill" />
+            <Image Source="{Binding ContactImageURL}"  Aspect="AspectFill" />
         </Grid>
 
         <!--Details-->

@@ -42,7 +42,12 @@ namespace ContApp.ViewModels
 
         public async void Open(Contact C)
         {
-            await _navigator.PushAsync(new ContactView());
+            await _navigator.PushAsync(new ContactView(C)
+            {
+                Title = C.ContactName
+            }
+
+            );
         }
     }
 }

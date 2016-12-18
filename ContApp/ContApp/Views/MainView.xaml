@@ -5,26 +5,8 @@
     <!--LAYOUT ROOT-->
     <StackLayout  VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
 
-        <!--TITLE-->
-        <Grid  HorizontalOptions="FillAndExpand" BackgroundColor="#2196F3">
-
-            <Grid.RowDefinitions>
-                <RowDefinition Height="65" />
-            </Grid.RowDefinitions>
-
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="65" />
-                <ColumnDefinition Width="*" />
-            </Grid.ColumnDefinitions>
-            <StackLayout Padding="20">
-                <Image Source="/Resources/drawable/phone.png"   Aspect="AspectFit" />
-            </StackLayout>
-
-            <Label Grid.Column="1" Text="ContApp" TextColor="White" FontSize="26" VerticalTextAlignment="Center" />
-        </Grid>
-
         <!--LIST OF CONTACTS-->
-        <Button  Text="Navigate" Command="{Binding LoadContact}" />
+
         <StackLayout VerticalOptions="FillAndExpand">
 
             <ListView ItemsSource="{Binding ContactList}" HasUnevenRows="True" VerticalOptions="FillAndExpand" ItemSelected="NavigateToContact">

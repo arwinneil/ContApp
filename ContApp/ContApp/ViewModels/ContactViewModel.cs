@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using ContApp.Models;
+using System.ComponentModel;
 using System.Windows.Input;
 using Xamarin.Forms;
 
@@ -37,9 +38,23 @@ namespace ContApp.ViewModels
             }
         }
 
-        public ContactViewModel()
+        private string _contactImageURL;
+
+        public string ContactImageURL
         {
-            ContactNumber = "1234567";
+            get { return _contactImageURL; }
+            set
+            {
+                _contactImageURL = value;
+
+                OnPropertyChanged("_contactImageURL");
+            }
+        }
+
+        public ContactViewModel(Contact C)
+        {
+            ContactNumber = C.ContactNumber;
+            ContactImageURL = C.ContactImageURL;
         }
 
         public void Run()

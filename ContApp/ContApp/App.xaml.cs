@@ -13,7 +13,10 @@ namespace ContApp
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new MainView());
+            MainPage = new NavigationPage(new MainView()
+            {
+                Title = "ContApp"
+            });
         }
 
         protected override void OnStart()
