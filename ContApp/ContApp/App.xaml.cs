@@ -3,7 +3,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
 using Xamarin.Forms;
 
 namespace ContApp
@@ -14,7 +13,7 @@ namespace ContApp
         {
             InitializeComponent();
 
-            MainPage = new ContactView();
+            MainPage = new NavigationPage(new MainView());
         }
 
         protected override void OnStart()

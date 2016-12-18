@@ -8,6 +8,6 @@ namespace ContApp.Models
 {
     public class Contact
     {
-        public string Mobile { get; set; }
+        public string ContactNumber { get; set; }
     }
 }

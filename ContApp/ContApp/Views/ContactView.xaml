@@ -30,7 +30,7 @@
 
                 <Entry Placeholder="Enter Number" Text="{Binding Input}" Keyboard="Numeric" />
 
-                <Button Text="Mama Bouton" Command="{Binding Update}" />
+                <Button Text="Bouton" Command="{Binding Update}" />
 
                 <StackLayout Padding="15,0,0,25">
                     <Label Text="Telephone Number" TextColor="Gray" FontSize="17" VerticalTextAlignment="Center" />
