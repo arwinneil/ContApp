@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              x:Class="ContApp.Views.MainView">
     <!--LAYOUT ROOT-->
     <StackLayout  VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
@@ -17,24 +18,24 @@
                         <ViewCell>
 
                             <!--CONTACT-->
-                            <StackLayout Padding="5">
+                            <StackLayout Padding="3">
 
                                 <Grid  Padding="0,0,20,0">
                                     <Grid.RowDefinitions>
-                                        <RowDefinition Height="75" />
+                                        <RowDefinition Height="70" />
                                     </Grid.RowDefinitions>
 
                                     <Grid.ColumnDefinitions>
-                                        <ColumnDefinition Width="75" />
+                                        <ColumnDefinition Width="70" />
                                         <ColumnDefinition Width="*" />
                                         <ColumnDefinition Width="40" />
                                     </Grid.ColumnDefinitions>
 
-                                    <Image Source="{Binding ContactImageURL}" Aspect="AspectFill" />
+                                    <controls:CircleImage Source="{Binding ContactImageURL}" Aspect="AspectFill"  BorderColor = "#2196F3" BorderThickness="3" />
                                     <Image Grid.Row="0" Grid.Column="2" Source="/Resources/drawable/rarrow.png" Aspect="AspectFit" />
-                                    <StackLayout Grid.Row="0" Grid.Column="1" Padding="15,0,0,0" VerticalOptions="FillAndExpand">
-                                        <Label  Text="{Binding ContactName}" FontSize="20" />
-                                        <Label  Text="{Binding ContactNumber}" FontSize="18" />
+                                    <StackLayout Grid.Row="0" Grid.Column="1" Padding="15,10,0,0" VerticalOptions="FillAndExpand">
+                                        <Label  Text="{Binding ContactName}" VerticalOptions="Center" TextColor="Black" FontSize="18" />
+                                        <Label  Text="{Binding ContactNumber}" VerticalOptions="Center" FontSize="16" />
                                     </StackLayout>
                                 </Grid>
                             </StackLayout>

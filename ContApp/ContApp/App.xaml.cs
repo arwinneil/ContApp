@@ -15,7 +15,7 @@ namespace ContApp
 
             MainPage = new NavigationPage(new MainView()
             {
-                Title = "ContApp"
+                Title = "ContApp",
             });
         }
 
