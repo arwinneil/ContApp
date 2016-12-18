@@ -1718,7 +1718,7 @@ namespace ContApp.Droid
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int a = 2130837504;
+			public const int a1 = 2130837504;
 			
 			// aapt resource value: 0x7f020001
 			public const int abc_ab_share_pack_mtrl_alpha = 2130837505;

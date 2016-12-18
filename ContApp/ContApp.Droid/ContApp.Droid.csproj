@@ -165,7 +165,7 @@
     <AndroidResource Include="Resources\drawable\b.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\a.jpg" />
+    <AndroidResource Include="Resources\drawable\a1.jpg" />
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\c.jpg" />

@@ -2,7 +2,6 @@
 using ContApp.Views;
 using System;
 using System.Collections.ObjectModel;
-using System.Windows.Input;
 using Xamarin.Forms;
 
 namespace ContApp.ViewModels
@@ -20,14 +19,14 @@ namespace ContApp.ViewModels
             {
                 Contact C = new Contact
                 {
+                    ContactImageURL = "/Resources/drawable/a" + i + ".jpg",
+                    ContactName = "Derp Doggo " + i,
                     ContactNumber = Convert.ToString(71234000 + i)
                 };
 
                 ContactList.Add(C);
             }
         }
-
-     
 
         #region OBSERVABLE COLLECTION
 
@@ -40,8 +39,6 @@ namespace ContApp.ViewModels
         }
 
         #endregion OBSERVABLE COLLECTION
-
-    
 
         public async void Open(Contact C)
         {
