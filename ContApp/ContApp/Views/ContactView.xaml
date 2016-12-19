@@ -5,7 +5,7 @@
     <StackLayout  VerticalOptions="Fill" HorizontalOptions="FillAndExpand">
 
         <!--TITLE-->
-        <Grid  HorizontalOptions="FillAndExpand" BackgroundColor="#2196F3">
+        <Grid Margin="0" HorizontalOptions="FillAndExpand" BackgroundColor="#2196F3">
             <Grid.RowDefinitions>
 
                 <RowDefinition Height="300" />
@@ -18,17 +18,24 @@
         <ScrollView  Grid.Row="2" Grid.ColumnSpan="2">
             <StackLayout>
 
-                <StackLayout Padding="15,0,0,10">
-                    <Label Text="Telephone Number" TextColor="Black" FontSize="17" VerticalTextAlignment="Center" />
-                    <Label  Text="{Binding ContactNumber}" TextColor="Gray" FontSize="24" VerticalTextAlignment="Center" />
+                <StackLayout Padding="5,0,5,0">
+                    <Frame HasShadow="True">
+                        <StackLayout Padding="5,0,0,5">
+                            <Label Text="Telephone Number" TextColor="Black" FontSize="17" VerticalTextAlignment="Center" />
+                            <Label  Text="{Binding ContactNumber}" TextColor="Gray" FontSize="24" VerticalTextAlignment="Center" />
+                        </StackLayout>
+                    </Frame>
                 </StackLayout>
 
-                <StackLayout Padding="15,0,0,10">
-                    <Label  Text="Description" TextColor="Black" FontSize="17" VerticalTextAlignment="Center" />
-                    <Label  TextColor="Gray" FontSize="24" VerticalTextAlignment="Center">
-
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </Label>
+                <StackLayout Padding="5,0,5,0">
+                    <Frame HasShadow="True">
+                        <StackLayout Padding="5,0,0,5">
+                            <Label  Text="Description" TextColor="Black" FontSize="17" VerticalTextAlignment="Center" />
+                            <Label  TextColor="Gray" FontSize="24" VerticalTextAlignment="Center">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                            </Label>
+                        </StackLayout>
+                    </Frame>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
